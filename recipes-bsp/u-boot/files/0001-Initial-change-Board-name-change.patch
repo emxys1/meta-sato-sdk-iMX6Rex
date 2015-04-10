@@ -1,0 +1,24 @@
+From 560b7d2da0a7cb7522218fb2bc096cf9ad6c2e18 Mon Sep 17 00:00:00 2001
+From: japalazon <japalazon@emxys.com>
+Date: Fri, 10 Apr 2015 10:58:39 +0200
+Subject: [PATCH] Initial change: Board name change
+
+---
+ board/freescale/mx6sabresd/mx6sabresd.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/board/freescale/mx6sabresd/mx6sabresd.c b/board/freescale/mx6sabresd/mx6sabresd.c
+index 12d8c56..fcf14d8 100644
+--- a/board/freescale/mx6sabresd/mx6sabresd.c
++++ b/board/freescale/mx6sabresd/mx6sabresd.c
+@@ -502,6 +502,6 @@ int board_late_init(void)
+ 
+ int checkboard(void)
+ {
+-	puts("Board: MX6-SabreSD\n");
++	puts("Board: iMX6-Rex\n");
+ 	return 0;
+ }
+-- 
+1.9.1
+

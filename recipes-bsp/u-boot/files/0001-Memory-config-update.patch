@@ -1,0 +1,69 @@
+From 1a03c8bebea247ad6a1a46c4ac1ea3522da580cf Mon Sep 17 00:00:00 2001
+From: japalazon <japalazon@emxys.com>
+Date: Fri, 10 Apr 2015 12:27:34 +0200
+Subject: [PATCH] Memory config update
+
+---
+ .pc/.quilt_patches                      | 1 +
+ .pc/.quilt_series                       | 1 +
+ .pc/.version                            | 1 +
+ .pc/applied-patches                     | 1 +
+ .scmversion                             | 1 +
+ board/freescale/mx6sabresd/mx6sabresd.c | 2 +-
+ 6 files changed, 6 insertions(+), 1 deletion(-)
+ create mode 100644 .pc/.quilt_patches
+ create mode 100644 .pc/.quilt_series
+ create mode 100644 .pc/.version
+ create mode 100644 .pc/applied-patches
+ create mode 100644 .scmversion
+
+diff --git a/.pc/.quilt_patches b/.pc/.quilt_patches
+new file mode 100644
+index 0000000..4baccb8
+--- /dev/null
++++ b/.pc/.quilt_patches
+@@ -0,0 +1 @@
++patches
+diff --git a/.pc/.quilt_series b/.pc/.quilt_series
+new file mode 100644
+index 0000000..c206706
+--- /dev/null
++++ b/.pc/.quilt_series
+@@ -0,0 +1 @@
++series
+diff --git a/.pc/.version b/.pc/.version
+new file mode 100644
+index 0000000..0cfbf08
+--- /dev/null
++++ b/.pc/.version
+@@ -0,0 +1 @@
++2
+diff --git a/.pc/applied-patches b/.pc/applied-patches
+new file mode 100644
+index 0000000..770342c
+--- /dev/null
++++ b/.pc/applied-patches
+@@ -0,0 +1 @@
++0001-Initial-change-Board-name-change.patch
+diff --git a/.scmversion b/.scmversion
+new file mode 100644
+index 0000000..8b13789
+--- /dev/null
++++ b/.scmversion
+@@ -0,0 +1 @@
++
+diff --git a/board/freescale/mx6sabresd/mx6sabresd.c b/board/freescale/mx6sabresd/mx6sabresd.c
+index 12d8c56..fcf14d8 100644
+--- a/board/freescale/mx6sabresd/mx6sabresd.c
++++ b/board/freescale/mx6sabresd/mx6sabresd.c
+@@ -502,6 +502,6 @@ int board_late_init(void)
+ 
+ int checkboard(void)
+ {
+-	puts("Board: MX6-SabreSD\n");
++	puts("Board: iMX6-Rex\n");
+ 	return 0;
+ }
+-- 
+1.9.1
+
